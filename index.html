@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="icon"
@@ -10,30 +16,91 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <title>Tailwind Starter</title>
+    <title>Results Summary Component</title>
   </head>
-  <body>
-    <h3>Your Result</h3>
-    <div>76</div>
-    <div>of 100</div>
+  <body class="text-lg font-sans">
+    <!-- Global Container -->
+    <div class="flex items-center justify-center min-h-screen bg-gray-100">
+      <!-- Card Container -->
+      <div
+        class="relative flex flex-col m-0 space-y-5 w-full bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0 md:m-6 md:w-auto"
+      >
+        <!-- Overall Results Container -->
+        <div
+          class="flex flex-col items-center justify-center space-y-5 py-5 text-white bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue text-center rounded-b-3xl md:rounded-t-3xl md:max-w-xs md:px-10"
+        >
+          <h3 class="text-lightLavender text-sm text-light">Your Result</h3>
+          <!-- Circle Container -->
+          <div
+            class="rounded-full bg-gradient-to-b from-violetBlue to-persianBlue px-8 pt-8 pb-4"
+          >
+            <div class="text-5xl font-bold mb-2">76</div>
+            <div class="text-xs text-lightSlateBlue">of 100</div>
+          </div>
+          <div class="w-full">
+            <div class="text-xl">Great</div>
+            <div
+              class="max-w-64 mx-auto text-sm font-light text-lightLavender md:max-w-48"
+            >
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </div>
+          </div>
+        </div>
 
-    <div>Great</div>
-    <p>You scored higher than 65% of the people who have taken these tests.</p>
+        <!-- Detailed Results Container -->
+        <div class="flex flex-col space-y-4 px-6 text-sm font-bold">
+          <h3 class="font-bold text-md text-darkGrayBlue">Summary</h3>
+          <!-- Reaction -->
+          <div class="item-container bg-veryLightRed">
+            <div class="flex">
+              <img src="./assets/images/icon-reaction.svg" alt="" class="h-4" />
+              <div class="text-lightRed pl-2 md:mr-16">Reaction</div>
+            </div>
+            <div class="text-lightLavender">
+              <span class="text-darkGrayBlue">80</span> / 100
+            </div>
+          </div>
 
-    <h3>Summary</h3>
+          <!-- Memory -->
+          <div class="item-container bg-veryLightOrangeyYellow">
+            <div class="flex">
+              <img src="./assets/images/icon-memory.svg" alt="" class="h-4" />
+              <div class="text-orangeyYellow pl-2">Memory</div>
+            </div>
+            <div class="text-lightLavender">
+              <span class="text-darkGrayBlue">92</span> / 100
+            </div>
+          </div>
 
-    <div>Reaction</div>
-    <div>80 / 100</div>
+          <!-- Verbal -->
+          <div class="item-container bg-veryLightGreenTeal">
+            <div class="flex">
+              <img src="./assets/images/icon-verbal.svg" alt="" class="h-4" />
+              <div class="text-greenTeal pl-2">Verbal</div>
+            </div>
+            <div class="text-lightLavender">
+              <span class="text-darkGrayBlue">61</span> / 100
+            </div>
+          </div>
 
-    <div>Memory</div>
-    <div>92 / 100</div>
-
-    <div>Verbal</div>
-    <div>61 / 100</div>
-
-    <div>Visual</div>
-    <div>72 / 100</div>
-
-    <div>Continue</div>
+          <!-- Visual -->
+          <div class="item-container bg-veryLightCobaltBlue">
+            <div class="flex">
+              <img src="./assets/images/icon-visual.svg" alt="" class="h-4" />
+              <div class="text-cobaltBlue pl-2">Visual</div>
+            </div>
+            <div class="text-lightLavender">
+              <span class="text-darkGrayBlue">72</span> / 100
+            </div>
+          </div>
+          <button
+            class="text-white text-center font-bold bg-cobaltBlue rounded-full py-2"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
