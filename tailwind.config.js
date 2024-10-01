@@ -31,6 +31,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Hanken Grotesk', 'sans-serif'],
+      },
+      borderRadius: {
+        '4xl': '1.75rem',
       }
     },
   },

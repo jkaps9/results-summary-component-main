@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .item-container {
-  @apply flex items-center justify-between p-4 rounded-lg;
+  @apply flex items-center justify-between p-4 rounded-lg md:min-w-72;
 }

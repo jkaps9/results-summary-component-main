@@ -18,29 +18,33 @@
     />
     <title>Results Summary Component</title>
   </head>
-  <body class="text-lg font-sans">
+  <body class="text-lg font-sans font-medium">
     <!-- Global Container -->
-    <div class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div
+      class="flex min-h-screen bg-gray-100 md:items-center md:justify-center"
+    >
       <!-- Card Container -->
       <div
-        class="relative flex flex-col m-0 space-y-5 w-full bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0 md:m-6 md:w-auto"
+        class="relative flex flex-col m-0 space-y-5 w-full bg-white md:flex-row md:space-y-0 md:m-6 md:w-auto md:rounded-4xl md:shadow-2xl"
       >
         <!-- Overall Results Container -->
         <div
-          class="flex flex-col items-center justify-center space-y-5 py-5 text-white bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue text-center rounded-b-3xl md:rounded-t-3xl md:max-w-xs md:px-10"
+          class="flex flex-col items-center justify-center space-y-5 py-9 text-white bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue text-center rounded-b-4xl md:rounded-t-3xl md:px-10 md:py-7 md:space-y-7 md:min-w-80"
         >
-          <h3 class="text-lightLavender text-sm text-light">Your Result</h3>
+          <h3 class="text-lightLavender text-md font-bold md:text-xl">
+            Your Result
+          </h3>
           <!-- Circle Container -->
           <div
-            class="rounded-full bg-gradient-to-b from-violetBlue to-persianBlue px-8 pt-8 pb-4"
+            class="rounded-full bg-gradient-to-b from-violetBlue to-persianBlue px-8 pt-8 pb-4 md:px-12 md:pt-12 md:pb-8"
           >
-            <div class="text-5xl font-bold mb-2">76</div>
-            <div class="text-xs text-lightSlateBlue">of 100</div>
+            <div class="text-6xl font-bold mb-1">76</div>
+            <div class="text-base text-white/50">of 100</div>
           </div>
           <div class="w-full">
-            <div class="text-xl">Great</div>
+            <div class="text-2xl font-bold mb-2 md:mb-4 md:text-3xl">Great</div>
             <div
-              class="max-w-64 mx-auto text-sm font-light text-lightLavender md:max-w-48"
+              class="max-w-64 mx-auto text-base text-lightLavender md:max-w-56"
             >
               You scored higher than 65% of the people who have taken these
               tests.
@@ -49,23 +53,33 @@
         </div>
 
         <!-- Detailed Results Container -->
-        <div class="flex flex-col space-y-4 px-6 text-sm font-bold">
-          <h3 class="font-bold text-md text-darkGrayBlue">Summary</h3>
+        <div
+          class="flex flex-col space-y-5 h-full px-8 text-base font-bold md:py-7 md:px-10"
+        >
+          <h3 class="font-bold text-lg text-darkGrayBlue">Summary</h3>
           <!-- Reaction -->
           <div class="item-container bg-veryLightRed">
             <div class="flex">
-              <img src="./assets/images/icon-reaction.svg" alt="" class="h-4" />
-              <div class="text-lightRed pl-2 md:mr-16">Reaction</div>
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt=""
+                class="h-5 mr-1"
+              />
+              <div class="text-lightRed pl-2">Reaction</div>
             </div>
             <div class="text-lightLavender">
-              <span class="text-darkGrayBlue">80</span> / 100
+              <span class="text-darkGrayBlue font-extrabold">80</span> / 100
             </div>
           </div>
 
           <!-- Memory -->
           <div class="item-container bg-veryLightOrangeyYellow">
             <div class="flex">
-              <img src="./assets/images/icon-memory.svg" alt="" class="h-4" />
+              <img
+                src="./assets/images/icon-memory.svg"
+                alt=""
+                class="h-5 mr-1"
+              />
               <div class="text-orangeyYellow pl-2">Memory</div>
             </div>
             <div class="text-lightLavender">
@@ -76,7 +90,11 @@
           <!-- Verbal -->
           <div class="item-container bg-veryLightGreenTeal">
             <div class="flex">
-              <img src="./assets/images/icon-verbal.svg" alt="" class="h-4" />
+              <img
+                src="./assets/images/icon-verbal.svg"
+                alt=""
+                class="h-5 mr-1"
+              />
               <div class="text-greenTeal pl-2">Verbal</div>
             </div>
             <div class="text-lightLavender">
@@ -87,7 +105,11 @@
           <!-- Visual -->
           <div class="item-container bg-veryLightCobaltBlue">
             <div class="flex">
-              <img src="./assets/images/icon-visual.svg" alt="" class="h-4" />
+              <img
+                src="./assets/images/icon-visual.svg"
+                alt=""
+                class="h-5 mr-1"
+              />
               <div class="text-cobaltBlue pl-2">Visual</div>
             </div>
             <div class="text-lightLavender">
@@ -95,7 +117,7 @@
             </div>
           </div>
           <button
-            class="text-white text-center font-bold bg-cobaltBlue rounded-full py-2"
+            class="text-white text-center font-bold bg-darkGrayBlue rounded-full py-4 hover:bg-gradient-to-b hover:from-lightSlateBlue hover:to-lightRoyalBlue"
           >
             Continue
           </button>
