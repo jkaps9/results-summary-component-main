@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.item-container {
+  @apply flex items-center justify-between p-4 rounded-lg;
+}
