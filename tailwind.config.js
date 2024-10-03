@@ -27,6 +27,7 @@ module.exports = {
         paleBlue: 'hsl(221, 100%, 96%)',
         lightLavender: 'hsl(241, 100%, 89%)',
         darkGrayBlue: 'hsl(224, 30%, 27%)',
+        mediumGrayBlue: 'hsla(224, 30%, 27%, 0.4)',
 
       },
       fontFamily: {
@@ -34,6 +35,9 @@ module.exports = {
       },
       borderRadius: {
         '4xl': '1.75rem',
+      },
+      spacing: {
+        '88' : '21rem',
       }
     },
   },

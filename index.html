@@ -20,16 +20,14 @@
   </head>
   <body class="text-lg font-sans font-medium">
     <!-- Global Container -->
-    <div
-      class="flex min-h-screen bg-gray-100 md:items-center md:justify-center"
-    >
+    <div class="flex min-h-screen bg-white md:items-center md:justify-center">
       <!-- Card Container -->
       <div
-        class="relative flex flex-col m-0 space-y-5 w-full bg-white md:flex-row md:space-y-0 md:m-6 md:w-auto md:rounded-4xl md:shadow-2xl"
+        class="relative flex flex-col m-0 space-y-5 w-full bg-white md:flex-row md:space-y-0 md:m-6 md:w-auto md:rounded-4xl md:shadow-md"
       >
         <!-- Overall Results Container -->
         <div
-          class="flex flex-col items-center justify-center space-y-5 py-9 text-white bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue text-center rounded-b-4xl md:rounded-t-3xl md:px-10 md:py-7 md:space-y-7 md:min-w-80"
+          class="flex flex-col items-center justify-between space-y-5 py-9 text-white bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue text-center rounded-b-4xl md:rounded-t-3xl md:py-7 md:space-y-5 md:min-w-88"
         >
           <h3 class="text-lightLavender text-md font-bold md:text-xl">
             Your Result
@@ -54,66 +52,73 @@
 
         <!-- Detailed Results Container -->
         <div
-          class="flex flex-col space-y-5 h-full px-8 text-base font-bold md:py-7 md:px-10"
+          class="flex flex-col space-y-5 h-full px-8 text-base font-bold md:py-7 md:px-10 md:space-y-10"
         >
-          <h3 class="font-bold text-lg text-darkGrayBlue">Summary</h3>
-          <!-- Reaction -->
-          <div class="item-container bg-veryLightRed">
-            <div class="flex">
-              <img
-                src="./assets/images/icon-reaction.svg"
-                alt=""
-                class="h-5 mr-1"
-              />
-              <div class="text-lightRed pl-2">Reaction</div>
+          <h3
+            class="font-bold text-lg text-darkGrayBlue md:text-2xl md:font-extrabold"
+          >
+            Summary
+          </h3>
+          <!-- Component Container -->
+          <div class="flex flex-col space-y-5">
+            <!-- Reaction -->
+            <div class="item-container bg-veryLightRed">
+              <div class="flex">
+                <img
+                  src="./assets/images/icon-reaction.svg"
+                  alt=""
+                  class="h-5 mr-1"
+                />
+                <div class="text-lightRed pl-2">Reaction</div>
+              </div>
+              <div class="text-mediumGrayBlue font-extrabold">
+                <span class="text-darkGrayBlue">80</span> / 100
+              </div>
             </div>
-            <div class="text-lightLavender">
-              <span class="text-darkGrayBlue font-extrabold">80</span> / 100
-            </div>
-          </div>
 
-          <!-- Memory -->
-          <div class="item-container bg-veryLightOrangeyYellow">
-            <div class="flex">
-              <img
-                src="./assets/images/icon-memory.svg"
-                alt=""
-                class="h-5 mr-1"
-              />
-              <div class="text-orangeyYellow pl-2">Memory</div>
+            <!-- Memory -->
+            <div class="item-container bg-veryLightOrangeyYellow">
+              <div class="flex">
+                <img
+                  src="./assets/images/icon-memory.svg"
+                  alt=""
+                  class="h-5 mr-1"
+                />
+                <div class="text-orangeyYellow pl-2">Memory</div>
+              </div>
+              <div class="text-mediumGrayBlue font-extrabold">
+                <span class="text-darkGrayBlue">92</span> / 100
+              </div>
             </div>
-            <div class="text-lightLavender">
-              <span class="text-darkGrayBlue">92</span> / 100
-            </div>
-          </div>
 
-          <!-- Verbal -->
-          <div class="item-container bg-veryLightGreenTeal">
-            <div class="flex">
-              <img
-                src="./assets/images/icon-verbal.svg"
-                alt=""
-                class="h-5 mr-1"
-              />
-              <div class="text-greenTeal pl-2">Verbal</div>
+            <!-- Verbal -->
+            <div class="item-container bg-veryLightGreenTeal">
+              <div class="flex">
+                <img
+                  src="./assets/images/icon-verbal.svg"
+                  alt=""
+                  class="h-5 mr-1"
+                />
+                <div class="text-greenTeal pl-2">Verbal</div>
+              </div>
+              <div class="text-mediumGrayBlue font-extrabold">
+                <span class="text-darkGrayBlue">61</span> / 100
+              </div>
             </div>
-            <div class="text-lightLavender">
-              <span class="text-darkGrayBlue">61</span> / 100
-            </div>
-          </div>
 
-          <!-- Visual -->
-          <div class="item-container bg-veryLightCobaltBlue">
-            <div class="flex">
-              <img
-                src="./assets/images/icon-visual.svg"
-                alt=""
-                class="h-5 mr-1"
-              />
-              <div class="text-cobaltBlue pl-2">Visual</div>
-            </div>
-            <div class="text-lightLavender">
-              <span class="text-darkGrayBlue">72</span> / 100
+            <!-- Visual -->
+            <div class="item-container bg-veryLightCobaltBlue">
+              <div class="flex">
+                <img
+                  src="./assets/images/icon-visual.svg"
+                  alt=""
+                  class="h-5 mr-1"
+                />
+                <div class="text-cobaltBlue pl-2">Visual</div>
+              </div>
+              <div class="text-mediumGrayBlue font-extrabold">
+                <span class="text-darkGrayBlue">72</span> / 100
+              </div>
             </div>
           </div>
           <button
